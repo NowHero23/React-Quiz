@@ -15,7 +15,7 @@ const InitFormComponent = () => {
   };
   const handleSave = () => {
     if (nickname.length > 0) {
-      navigate(`/action/${selectedQuizId}/1`);
+      navigate(`/React-Quiz/action/${selectedQuizId}/1`);
     }
   };
 

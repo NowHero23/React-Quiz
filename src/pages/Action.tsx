@@ -27,25 +27,25 @@ const Action = () => {
     if (page > 1) {
       setLoading(true);
       dispatch(updatePage(page - 1));
-      navigate(`/action/${selectedQuiz.id}/${page - 1}`);
+      navigate(`/React-Quiz/action/${selectedQuiz.id}/${page - 1}`);
     }
   };
   const handleNext = () => {
     if (page < selectedQuiz.questions.length && answerSelected) {
       setLoading(true);
       dispatch(updatePage(page + 1));
-      navigate(`/action/${selectedQuiz.id}/${page + 1}`);
+      navigate(`/React-Quiz/action/${selectedQuiz.id}/${page + 1}`);
     }
   };
   const handleResult = () => {
     if (page === selectedQuiz.questions.length && answerSelected) {
-      navigate(`/result/${selectedQuiz.id}`);
+      navigate(`/React-Quiz/result/${selectedQuiz.id}`);
     }
   };
 
   useEffect(() => {
     if (selectedQuiz.id === 0) {
-      navigate("/");
+      navigate("/React-Quiz/");
     }
   });
 

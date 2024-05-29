@@ -10,7 +10,7 @@ const Edit = () => {
 
   useEffect(() => {
     if (quiz.id === 0) {
-      navigate("/error/404");
+      navigate("/React-Quiz/error/404");
     }
   });
 

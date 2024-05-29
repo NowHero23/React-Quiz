@@ -19,7 +19,7 @@ export default function ErrorPage() {
           <i>{error.statusText || error.message}</i>
         </p>
 
-        <Link to={"/"} className="mt-4 btn btn-primary">
+        <Link to={"/React-Quiz/"} className="mt-4 btn btn-primary">
           Go Home page
         </Link>
       </div>

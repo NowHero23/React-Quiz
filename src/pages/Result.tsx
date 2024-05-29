@@ -100,7 +100,10 @@ const Result = () => {
                 Currect answers:{progresInfo?.count.correct}/
                 {progresInfo?.count.all}
               </p>
-              <NavLink to={"/"} className="w-full mt-2 btn btn-success">
+              <NavLink
+                to={"/React-Quiz/"}
+                className="w-full mt-2 btn btn-success"
+              >
                 Go home
               </NavLink>
             </div>
@@ -126,17 +129,17 @@ const Result = () => {
                                   item.id === answer.id &&
                                   item.questionId === question.id &&
                                   !item.isTrue
-                              ) !== -1 && "!bg-error",
+                              ) !== -1 && "!bg-error text-error-content",
 
                               answer.isTrue &&
-                                "border-success border-4 text-success-content",
+                                "border-success border-4 text-base-content",
 
                               data.answers.findIndex(
                                 (item) =>
                                   item.id === answer.id &&
                                   item.questionId === question.id &&
                                   item.isTrue
-                              ) !== -1 && "!bg-success"
+                              ) !== -1 && "!bg-success !text-success-content"
                             )}
                           >
                             {answer.text}

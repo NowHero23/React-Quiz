@@ -13,7 +13,7 @@ const InitQuiz = () => {
 
   useEffect(() => {
     if (selectedQuizId === 0) {
-      navigate("/");
+      navigate("/React-Quiz/");
     }
 
     return () => {

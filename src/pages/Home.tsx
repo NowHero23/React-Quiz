@@ -51,7 +51,7 @@ const Home = () => {
             ))}
           </div>
 
-          <Link to={"/create"} className="btn btn-primary">
+          <Link to={"/React-Quiz/create"} className="btn btn-primary">
             Create new
           </Link>
         </div>

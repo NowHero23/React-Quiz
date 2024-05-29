@@ -24,7 +24,10 @@ const QuizCardComponent: React.FC<QuizCardProps> = React.memo(
       <>
         <div className="rounded shadow-xl card card-compact bg-base-300">
           <div className="card-body">
-            <Link to={`#`} className="card-title hover:underline">
+            <Link
+              to={`/React-Quiz/init/`}
+              className="card-title hover:underline"
+            >
               {quiz.title}
             </Link>
             <p>{quiz.description}</p>
@@ -60,14 +63,14 @@ const QuizCardComponent: React.FC<QuizCardProps> = React.memo(
                 </button>
                 <Link
                   onClick={handleEdit}
-                  to={`/edit/`}
+                  to={`/React-Quiz/edit/`}
                   className="btn btn-ghost btn-secondary"
                 >
                   edit
                 </Link>
                 <Link
                   onClick={handleInitAction}
-                  to={`/init/`}
+                  to={`/React-Quiz/init/`}
                   className="btn btn-primary"
                 >
                   Go

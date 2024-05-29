@@ -17,7 +17,7 @@ function QuizCreateFormComponent({ ...rest }: QuizFormProps) {
     if (quiz.title.length > 0) {
       dispatch(addQuiz(quiz));
       dispatch(clearState());
-      return navigate("/");
+      return navigate("/React-Quiz/");
     }
   };
 
@@ -53,7 +53,7 @@ function QuizCreateFormComponent({ ...rest }: QuizFormProps) {
           </svg>
           Save
         </button>
-        <Link to={"/"} className="my-2 text-xl btn btn-warning">
+        <Link to={"/React-Quiz/"} className="my-2 text-xl btn btn-warning">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

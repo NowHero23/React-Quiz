@@ -29,7 +29,7 @@ SetTheme();
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/React-Quiz/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -38,19 +38,19 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "create/",
+        path: "/React-Quiz/create/",
         element: <Create />,
       },
       {
-        path: "edit/",
+        path: "/React-Quiz/edit/",
         element: <Edit />,
       },
       {
-        path: "init/",
+        path: "/React-Quiz/init/",
         element: <InitQuiz />,
       },
       {
-        path: "action/:id/:page",
+        path: "/React-Quiz/action/:id/:page",
         element: <Action />,
       },
       {
